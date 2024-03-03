@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mantra Puja Trisandya"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="298dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om bhur bhvah svah, tat savitur varenyam, bhargo devasya dhimahi, dhiyo yo nah pracodayat"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om narayana evedam sarvam, yad bhutam yac ca bhavyam, niskalanko niranjano nirvikalpo, nirakyatah sudah Devo Eko, narayanah ma dvitiyo asti kascit"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om twam sivah tvam mahadevah, isvarah paramessvarah, Brahma visnus ca rudras ca, purusah parikirtitah"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om papo ham papakarmaham, papatma papasambhavah, trahi mam pundarikaksa, sabahya bhyantarah sucih"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om ksamasva mam mahadevah, sarvaprani hitankara, Mam moca sarva papebhyah, palayasva sada siva"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Om ksantavyah kayiko dosah, ksantavyo vaciko mama, ksantavya Mamasa dosah, tat pramadat ksamasva mam"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="110dp"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

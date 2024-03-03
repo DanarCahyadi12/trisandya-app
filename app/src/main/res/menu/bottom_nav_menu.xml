@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu_item"
+        android:icon="@drawable/baseline_home_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home" />
+    <item
+        android:id="@+id/sloka_menu_item"
+        android:icon="@drawable/open_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Sloka" />
+    <item
+        android:id="@+id/doa_menu_item"
+        android:icon="@drawable/pray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Doa" />
+</menu>
