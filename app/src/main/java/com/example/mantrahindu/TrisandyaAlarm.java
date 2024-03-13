@@ -44,6 +44,15 @@ public class TrisandyaAlarm {
 
     }
 
+    public void cancelAlarm() {
+        if(alarmManager != null) {
+            alarmManager.cancel(pendingIntent);
+
+
+        }
+
+    }
+
 
 
 

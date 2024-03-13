@@ -25,6 +25,7 @@ public class TrisandyaReceiver extends BroadcastReceiver {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         trisandyaAlarm = new TrisandyaAlarm(ctx);
+        trisandyaAlarm.cancelAlarm();
         trisandyaAlarm.setAlarm();
 
         PendingIntent pendingIntent = PendingIntent.getActivity(ctx, 0, nextActivity, PendingIntent.FLAG_IMMUTABLE);
@@ -47,6 +48,16 @@ public class TrisandyaReceiver extends BroadcastReceiver {
             }
         });
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(ctx);
+        if (ActivityCompat.checkSelfPermission(ctx, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         notificationManagerCompat.notify(123, builder.build());
         Log.d("Receive", "Trisandya time");
 
